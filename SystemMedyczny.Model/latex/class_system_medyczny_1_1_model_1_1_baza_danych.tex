@@ -1,0 +1,162 @@
+\doxysection{System\+Medyczny.\+Model.\+Baza\+Danych Class Reference}
+\hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych}{}\label{class_system_medyczny_1_1_model_1_1_baza_danych}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+
+
+Klasa reprezentująca kontekst bazy danych dla systemu medycznego.  
+
+
+Inheritance diagram for System\+Medyczny.\+Model.\+Baza\+Danych\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_system_medyczny_1_1_model_1_1_baza_danych}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_aa518f86451fe31ba0db71bbc847fb8ae}{Baza\+Danych}} (string sciezka\+Bazy\+Danych="{}system\+\_\+medyczny.\+db"{})
+\begin{DoxyCompactList}\small\item\em Inicjalizuje nową instancję klasy \doxylink{class_system_medyczny_1_1_model_1_1_baza_danych}{Baza\+Danych} z opcjonalną ścieżką do pliku bazy danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a4bc37cc77f20414adff7593c08e439f4}{On\+Configuring}} (Db\+Context\+Options\+Builder options)
+\begin{DoxyCompactList}\small\item\em Konfiguruje opcje kontekstu bazy danych. \end{DoxyCompactList}\item 
+override void \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a9516a3f37d84bd927f22be7105102161}{On\+Model\+Creating}} (Model\+Builder builder)
+\begin{DoxyCompactList}\small\item\em Konfiguruje model danych przy użyciu klasy Model\+Builder. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+Db\+Set$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_apteka}{Apteka}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a49718d94ca89c7408330d62256093dbb}{Apteki}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia zestaw aptek w bazie danych. \end{DoxyCompactList}\item 
+Db\+Set$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_firma_farmaceutyczna}{Firma\+Farmaceutyczna}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a76022da982332037a9b3373a70fea798}{Firmy\+Farmaceutyczne}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia zestaw firm farmaceutycznych w bazie danych. \end{DoxyCompactList}\item 
+Db\+Set$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_pacjent}{Pacjent}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_ac735f3108d387aef88f0b297efb84fc7}{Pacjenci}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia zestaw pacjentów w bazie danych. \end{DoxyCompactList}\item 
+Db\+Set$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lekarz}{Lekarz}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a8c24174da6da9473c63ec0c8e141b7ce}{Lekarze}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia zestaw lekarzy w bazie danych. \end{DoxyCompactList}\item 
+Db\+Set$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta}{Recepta}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a139aea5a2e86b37c6f167e2df43fcc0a}{Recepty}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia zestaw recept w bazie danych. \end{DoxyCompactList}\item 
+Db\+Set$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lek}{Lek}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_baza_danych_a7b868954cd150e388b1d58dd669df554}{Leki}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia zestaw leków w bazie danych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca kontekst bazy danych dla systemu medycznego. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_aa518f86451fe31ba0db71bbc847fb8ae}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!BazaDanych@{BazaDanych}}
+\index{BazaDanych@{BazaDanych}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{BazaDanych()}{BazaDanych()}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_aa518f86451fe31ba0db71bbc847fb8ae} 
+System\+Medyczny.\+Model.\+Baza\+Danych.\+Baza\+Danych (\begin{DoxyParamCaption}\item[{string}]{sciezka\+Bazy\+Danych}{ = {\ttfamily "{}system\+\_\+medyczny.db"{}}}\end{DoxyParamCaption})}
+
+
+
+Inicjalizuje nową instancję klasy \doxylink{class_system_medyczny_1_1_model_1_1_baza_danych}{Baza\+Danych} z opcjonalną ścieżką do pliku bazy danych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sciezka\+Bazy\+Danych} & Ścieżka do pliku bazy danych. Domyślnie "{}system\+\_\+medyczny.\+db"{}.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a4bc37cc77f20414adff7593c08e439f4}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!OnConfiguring@{OnConfiguring}}
+\index{OnConfiguring@{OnConfiguring}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{OnConfiguring()}{OnConfiguring()}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a4bc37cc77f20414adff7593c08e439f4} 
+override void System\+Medyczny.\+Model.\+Baza\+Danych.\+On\+Configuring (\begin{DoxyParamCaption}\item[{Db\+Context\+Options\+Builder}]{options}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konfiguruje opcje kontekstu bazy danych. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em options} & Opcje kontekstu bazy danych.\\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a9516a3f37d84bd927f22be7105102161}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!OnModelCreating@{OnModelCreating}}
+\index{OnModelCreating@{OnModelCreating}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{OnModelCreating()}{OnModelCreating()}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a9516a3f37d84bd927f22be7105102161} 
+override void System\+Medyczny.\+Model.\+Baza\+Danych.\+On\+Model\+Creating (\begin{DoxyParamCaption}\item[{Model\+Builder}]{builder}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+
+
+Konfiguruje model danych przy użyciu klasy Model\+Builder. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em builder} & Instancja klasy Model\+Builder.\\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a49718d94ca89c7408330d62256093dbb}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!Apteki@{Apteki}}
+\index{Apteki@{Apteki}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{Apteki}{Apteki}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a49718d94ca89c7408330d62256093dbb} 
+Db\+Set$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_apteka}{Apteka}}$>$ System\+Medyczny.\+Model.\+Baza\+Danych.\+Apteki\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia zestaw aptek w bazie danych. 
+
+Db\+Set obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_apteka}{Apteka}.\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a76022da982332037a9b3373a70fea798}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!FirmyFarmaceutyczne@{FirmyFarmaceutyczne}}
+\index{FirmyFarmaceutyczne@{FirmyFarmaceutyczne}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{FirmyFarmaceutyczne}{FirmyFarmaceutyczne}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a76022da982332037a9b3373a70fea798} 
+Db\+Set$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_firma_farmaceutyczna}{Firma\+Farmaceutyczna}}$>$ System\+Medyczny.\+Model.\+Baza\+Danych.\+Firmy\+Farmaceutyczne\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia zestaw firm farmaceutycznych w bazie danych. 
+
+Db\+Set obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_firma_farmaceutyczna}{Firma\+Farmaceutyczna}.\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a8c24174da6da9473c63ec0c8e141b7ce}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!Lekarze@{Lekarze}}
+\index{Lekarze@{Lekarze}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{Lekarze}{Lekarze}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a8c24174da6da9473c63ec0c8e141b7ce} 
+Db\+Set$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lekarz}{Lekarz}}$>$ System\+Medyczny.\+Model.\+Baza\+Danych.\+Lekarze\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia zestaw lekarzy w bazie danych. 
+
+Db\+Set obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_lekarz}{Lekarz}.\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a7b868954cd150e388b1d58dd669df554}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!Leki@{Leki}}
+\index{Leki@{Leki}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{Leki}{Leki}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a7b868954cd150e388b1d58dd669df554} 
+Db\+Set$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lek}{Lek}}$>$ System\+Medyczny.\+Model.\+Baza\+Danych.\+Leki\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia zestaw leków w bazie danych. 
+
+Db\+Set obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_lek}{Lek}.\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_ac735f3108d387aef88f0b297efb84fc7}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!Pacjenci@{Pacjenci}}
+\index{Pacjenci@{Pacjenci}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{Pacjenci}{Pacjenci}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_ac735f3108d387aef88f0b297efb84fc7} 
+Db\+Set$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_pacjent}{Pacjent}}$>$ System\+Medyczny.\+Model.\+Baza\+Danych.\+Pacjenci\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia zestaw pacjentów w bazie danych. 
+
+Db\+Set obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_pacjent}{Pacjent}.\Hypertarget{class_system_medyczny_1_1_model_1_1_baza_danych_a139aea5a2e86b37c6f167e2df43fcc0a}\index{SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}!Recepty@{Recepty}}
+\index{Recepty@{Recepty}!SystemMedyczny.Model.BazaDanych@{SystemMedyczny.Model.BazaDanych}}
+\doxysubsubsection{\texorpdfstring{Recepty}{Recepty}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_baza_danych_a139aea5a2e86b37c6f167e2df43fcc0a} 
+Db\+Set$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta}{Recepta}}$>$ System\+Medyczny.\+Model.\+Baza\+Danych.\+Recepty\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia zestaw recept w bazie danych. 
+
+Db\+Set obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_recepta}{Recepta}.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Baza\+Danych.\+cs\end{DoxyCompactItemize}

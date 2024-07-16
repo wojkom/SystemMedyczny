@@ -1,0 +1,98 @@
+\doxysection{System\+Medyczny.\+Model.\+Recepta Class Reference}
+\hypertarget{class_system_medyczny_1_1_model_1_1_recepta}{}\label{class_system_medyczny_1_1_model_1_1_recepta}\index{SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}}
+
+
+Klasa reprezentująca receptę w systemie medycznym.  
+
+
+Inheritance diagram for System\+Medyczny.\+Model.\+Recepta\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_system_medyczny_1_1_model_1_1_recepta}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Properties}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_pacjent}{Pacjent}} \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta_aba6d77c7cfa4504fa600930eede0516d}{Pacjent}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia pacjenta, dla którego jest wystawiona recepta. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lekarz}{Lekarz}} \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta_a2abef522064cf9fd2caa0fd69e59f3e9}{Lekarz}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia lekarza, który wystawił receptę. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta_a44eaa811a663ee5708d855746837740f}{Data\+Wystawienia}} = Date\+Time.\+Now\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia datę wystawienia recepty. \end{DoxyCompactList}\item 
+List$<$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lek_recepta}{Lek\+Recepta}} $>$ \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta_a80fe055f43c08576d3f8e3a53f5907b8}{Leki}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia listę leków przepisanych na recepcie. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_recepta_ac705c96b9fb9b56fcee0a15a441791ac}{Leki\+Tekst}}\hspace{0.3cm}{\ttfamily  \mbox{[}get\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera tekstową reprezentację leków na recepcie. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Properties inherited from \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_encja}{System\+Medyczny.\+Model.\+Encja}}}
+\begin{DoxyCompactItemize}
+\item 
+long \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_encja_ad9ccd15367f2f27e105297131bf78cfb}{Id}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia unikalny identyfikator encji. \end{DoxyCompactList}\item 
+Date\+Time \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_encja_a988e73ca7250009b4138c8fa9baac9ff}{Data\+Utworzenia}} = Date\+Time.\+Now\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia datę utworzenia encji. \end{DoxyCompactList}\item 
+string \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_encja_adae07dd11c5fc52c231b837c653685d0}{Uwagi}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia dodatkowe uwagi dotyczące encji. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_encja_acd87c8d7ab3fa0df7b19c8e3e606a307}{Usunieta}}\hspace{0.3cm}{\ttfamily  \mbox{[}get, set\mbox{]}}
+\begin{DoxyCompactList}\small\item\em Pobiera lub ustawia wartość wskazującą, czy encja została usunięta. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Klasa reprezentująca receptę w systemie medycznym. 
+
+\doxysubsection{Property Documentation}
+\Hypertarget{class_system_medyczny_1_1_model_1_1_recepta_a44eaa811a663ee5708d855746837740f}\index{SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}!DataWystawienia@{DataWystawienia}}
+\index{DataWystawienia@{DataWystawienia}!SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}}
+\doxysubsubsection{\texorpdfstring{DataWystawienia}{DataWystawienia}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_recepta_a44eaa811a663ee5708d855746837740f} 
+Date\+Time System\+Medyczny.\+Model.\+Recepta.\+Data\+Wystawienia = Date\+Time.\+Now\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia datę wystawienia recepty. 
+
+Data wystawienia recepty. Domyślnie ustawiona na aktualną datę i godzinę.\Hypertarget{class_system_medyczny_1_1_model_1_1_recepta_a2abef522064cf9fd2caa0fd69e59f3e9}\index{SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}!Lekarz@{Lekarz}}
+\index{Lekarz@{Lekarz}!SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}}
+\doxysubsubsection{\texorpdfstring{Lekarz}{Lekarz}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_recepta_a2abef522064cf9fd2caa0fd69e59f3e9} 
+\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lekarz}{Lekarz}} System\+Medyczny.\+Model.\+Recepta.\+Lekarz\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia lekarza, który wystawił receptę. 
+
+Obiekt typu \doxylink{class_system_medyczny_1_1_model_1_1_lekarz}{Lekarz} reprezentujący lekarza, który wystawił receptę.\Hypertarget{class_system_medyczny_1_1_model_1_1_recepta_a80fe055f43c08576d3f8e3a53f5907b8}\index{SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}!Leki@{Leki}}
+\index{Leki@{Leki}!SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}}
+\doxysubsubsection{\texorpdfstring{Leki}{Leki}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_recepta_a80fe055f43c08576d3f8e3a53f5907b8} 
+List$<$\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_lek_recepta}{Lek\+Recepta}}$>$ System\+Medyczny.\+Model.\+Recepta.\+Leki\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia listę leków przepisanych na recepcie. 
+
+Lista obiektów typu \doxylink{class_system_medyczny_1_1_model_1_1_lek_recepta}{Lek\+Recepta} reprezentujących leki przepisane na recepcie.\Hypertarget{class_system_medyczny_1_1_model_1_1_recepta_ac705c96b9fb9b56fcee0a15a441791ac}\index{SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}!LekiTekst@{LekiTekst}}
+\index{LekiTekst@{LekiTekst}!SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}}
+\doxysubsubsection{\texorpdfstring{LekiTekst}{LekiTekst}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_recepta_ac705c96b9fb9b56fcee0a15a441791ac} 
+string System\+Medyczny.\+Model.\+Recepta.\+Leki\+Tekst\hspace{0.3cm}{\ttfamily [get]}}
+
+
+
+Pobiera tekstową reprezentację leków na recepcie. 
+
+Tekstowa reprezentacja leków na recepcie w formacie "{}\+Nazwa handlowa leku (ilość), ..."{}.\Hypertarget{class_system_medyczny_1_1_model_1_1_recepta_aba6d77c7cfa4504fa600930eede0516d}\index{SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}!Pacjent@{Pacjent}}
+\index{Pacjent@{Pacjent}!SystemMedyczny.Model.Recepta@{SystemMedyczny.Model.Recepta}}
+\doxysubsubsection{\texorpdfstring{Pacjent}{Pacjent}}
+{\footnotesize\ttfamily \label{class_system_medyczny_1_1_model_1_1_recepta_aba6d77c7cfa4504fa600930eede0516d} 
+\mbox{\hyperlink{class_system_medyczny_1_1_model_1_1_pacjent}{Pacjent}} System\+Medyczny.\+Model.\+Recepta.\+Pacjent\hspace{0.3cm}{\ttfamily [get]}, {\ttfamily [set]}}
+
+
+
+Pobiera lub ustawia pacjenta, dla którego jest wystawiona recepta. 
+
+Obiekt typu \doxylink{class_system_medyczny_1_1_model_1_1_pacjent}{Pacjent} reprezentujący pacjenta, dla którego jest wystawiona recepta.
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Recepta.\+cs\end{DoxyCompactItemize}

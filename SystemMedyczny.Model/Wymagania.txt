@@ -1,0 +1,14 @@
+﻿Zbuduj model potrzeb informatycznych w postaci diagramów związków encji dla systemu
+medycznego opisanego nasterowująco: - dla każdego pacjenta chcemy pamiętać następujące
+informacje: nr ubezpieczenia, nazwisko, adres, wiek: Nr. ubezpieczenia jednoznacznie identyfikuje
+pacjenta - dla każdego lekarza pamiętamy numer ubezpieczenia, nazwisko, specjalność, wysługa lat.
+Nr. Ubezpieczenia jednoznacznie identyfikuje lekarza - każda firma farmaceutyczna jest opisana przez
+nazwę i telefon - dla każdego leku chcemy pamiętać jego nazwę handlową oraz podstawową
+substancję. aktywną. Każdy lek jest sprzedawany przez firmę farmaceutyczną. Nazwa handlowa leku
+jednoznacznie identyfikuje ten lek - każdy pacjent jest prowadzony przez jednego lekarza. Karzdy
+lekarz ma co najmniej jednego pacjenta. - dla każdej apteki chcemy pamiętać jej nazwę, adres, numer
+telefonu. -Każda apteka sprzedaje wiele leków. Każdy lek ma swoją cenę. Lek morze być sprzedawany
+przez wiele aptek po różnych cenach. -lekarze przepisują leki pacjenta w postaci recept. Lekarz może
+przepisywać pacjentowi (wielu pacjentom) jeden lub więcej leków. Pacjenta może przyjmować leki
+przepisane przez wielu lekarzy. Każda recepta ma datę i ilość specyfiku (leku) -firmy farmaceutyczne
+podpisują długotrwałe kontrakty z aptekami.

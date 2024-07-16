@@ -1,0 +1,194 @@
+﻿<Window
+    x:Class="SystemMedyczny.InterfejsGraficzny.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:SystemMedyczny.InterfejsGraficzny"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="SystemMedyczny.InterfejsGraficzny"
+    Width="800"
+    Height="450"
+    FontFamily="Consolas"
+    FontSize="12pt"
+    WindowState="Maximized"
+    mc:Ignorable="d">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Pacjenci">
+                <DataGrid
+                    x:Name="pacjenciTabela"
+                    AutoGenerateColumns="False"
+                    PreviewKeyDown="PacjenciTabelaPreviewKeyDown"
+                    RowEditEnding="PacjenciTabelaRowEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Binding="{Binding Id}"
+                            Header="ID"
+                            IsReadOnly="True" />
+                        <DataGridTextColumn
+                            Binding="{Binding NrUbezpieczenia, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nr ubezpieczenia" />
+                        <DataGridTextColumn
+                            Binding="{Binding Imie, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Imię" />
+                        <DataGridTextColumn
+                            Binding="{Binding Nazwisko, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nazwisko" />
+                        <DataGridTextColumn
+                            Binding="{Binding Adres, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Adres" />
+                        <DataGridTextColumn
+                            Binding="{Binding DataUrodzenia, UpdateSourceTrigger=PropertyChanged, StringFormat=\{0:yyyy-MM-dd\}}"
+                            Header="Data urodzenia" />
+                        <DataGridComboBoxColumn
+                            x:Name="lekarzPacjentaKolumna"
+                            DisplayMemberPath="ImieINazwisko"
+                            Header="Lekarz"
+                            SelectedItemBinding="{Binding Lekarz, UpdateSourceTrigger=PropertyChanged}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Lekarze">
+                <DataGrid
+                    x:Name="lekarzeTabela"
+                    AutoGenerateColumns="False"
+                    PreviewKeyDown="LekarzeTabelaPreviewKeyDown"
+                    RowEditEnding="LekarzeTabelaRowEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Binding="{Binding Id}"
+                            Header="ID"
+                            IsReadOnly="True" />
+                        <DataGridTextColumn
+                            Binding="{Binding NrUbezpieczenia, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nr ubezpieczenia" />
+                        <DataGridTextColumn
+                            Binding="{Binding Imie, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Imię" />
+                        <DataGridTextColumn
+                            Binding="{Binding Nazwisko, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nazwisko" />
+                        <DataGridTextColumn
+                            Binding="{Binding Adres, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Adres" />
+                        <DataGridTextColumn
+                            Binding="{Binding DataUrodzenia, UpdateSourceTrigger=PropertyChanged, StringFormat=\{0:yyyy-MM-dd\}}"
+                            Header="Data urodzenia" />
+                        <DataGridTextColumn
+                            Binding="{Binding DataRozpoczeciaPracy, UpdateSourceTrigger=PropertyChanged, StringFormat=\{0:yyyy-MM-dd\}}"
+                            Header="Data rozpoczęcia pracy" />
+                        <DataGridTextColumn
+                            Binding="{Binding Specjalizacja, UpdateSourceTrigger=PropertyChanged, StringFormat=\{0:yyyy-MM-dd\}}"
+                            Header="Specjalizacja" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Leki">
+                <DataGrid
+                    x:Name="lekiTabela"
+                    AutoGenerateColumns="False"
+                    PreviewKeyDown="LekiTabelaPreviewKeyDown"
+                    RowEditEnding="LekiTabelaRowEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Binding="{Binding Id}"
+                            Header="ID"
+                            IsReadOnly="True" />
+                        <DataGridTextColumn
+                            Binding="{Binding NazwaHandlowa, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nazwa handlowa" />
+                        <DataGridTextColumn
+                            Binding="{Binding SubstancjaAktywna, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Substancja aktywna" />
+                        <DataGridComboBoxColumn
+                            x:Name="firmaFarmaceutycznaKolumna"
+                            DisplayMemberPath="Nazwa"
+                            Header="Firma farmaceutyczna"
+                            SelectedItemBinding="{Binding FirmaFarmaceutyczna, UpdateSourceTrigger=PropertyChanged}" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Firmy farmaceutyczne">
+                <DataGrid
+                    x:Name="firmyFarmaceutyczneTabela"
+                    AutoGenerateColumns="False"
+                    PreviewKeyDown="FirmyFarmaceutyczneTabelaPreviewKeyDown"
+                    RowEditEnding="FirmyFarmaceutyczneTabelaRowEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Binding="{Binding Id}"
+                            Header="ID"
+                            IsReadOnly="True" />
+                        <DataGridTextColumn
+                            Binding="{Binding Nazwa, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nazwa" />
+                        <DataGridTextColumn
+                            Binding="{Binding Telefon, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Telefon" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Apteki">
+                <DataGrid
+                    x:Name="aptekiTabela"
+                    AutoGenerateColumns="False"
+                    PreviewKeyDown="AptekiTabelaPreviewKeyDown"
+                    RowEditEnding="AptekiTabelaRowEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Binding="{Binding Id}"
+                            Header="ID"
+                            IsReadOnly="True" />
+                        <DataGridTextColumn
+                            Binding="{Binding Nazwa, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Nazwa" />
+                        <DataGridTextColumn
+                            Binding="{Binding Adres, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Adres" />
+                        <DataGridTextColumn
+                            Binding="{Binding Telefon, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Telefon" />
+                    </DataGrid.Columns>
+                </DataGrid>
+            </TabItem>
+            <TabItem Header="Recepty">
+                <DataGrid
+                    x:Name="receptyTabela"
+                    AutoGenerateColumns="False"
+                    PreviewKeyDown="ReceptyTabelaPreviewKeyDown"
+                    RowEditEnding="ReceptyTabelaRowEditEnding">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn
+                            Binding="{Binding Id}"
+                            Header="ID"
+                            IsReadOnly="True" />
+                        <DataGridComboBoxColumn
+                            x:Name="pacjentReceptyKolumna"
+                            DisplayMemberPath="ImieINazwisko"
+                            Header="Pacjent"
+                            SelectedItemBinding="{Binding Pacjent, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridComboBoxColumn
+                            x:Name="lekarzReceptyKolumna"
+                            DisplayMemberPath="ImieINazwisko"
+                            Header="Lekarz"
+                            SelectedItemBinding="{Binding Lekarz, UpdateSourceTrigger=PropertyChanged}" />
+                        <DataGridTextColumn
+                            Binding="{Binding DataWystawienia, UpdateSourceTrigger=PropertyChanged, StringFormat=\{0:yyyy-MM-dd\}}"
+                            Header="Data wystawienia" />
+                        <DataGridTextColumn
+                            Binding="{Binding LekiTekst, UpdateSourceTrigger=PropertyChanged}"
+                            Header="Leki" />
+                    </DataGrid.Columns>
+                    <DataGrid.ContextMenu>
+                        <ContextMenu>
+                            <MenuItem
+                                x:Name="dodajLekDoReceptyItem"
+                                Click="DodajLekDoReceptyClick"
+                                Header="Dodaj lek do recepty" />
+                        </ContextMenu>
+                    </DataGrid.ContextMenu>
+                </DataGrid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
